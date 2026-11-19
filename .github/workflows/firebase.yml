@@ -16,7 +16,7 @@ jobs:
       - name: Prepare public folder and firebase.json
         run: |
           mkdir -p public
-          cp -r artikel api index.html page*.html sitemap.xml feed*.xml robots.txt manifest.json public/ 2>/dev/null || true
+          cp -r artikel api *.html sitemap.xml feed*.xml robots.txt manifest.json public/ 2>/dev/null || true
           cat << 'EOF' > firebase.json
           {
             "hosting": {
